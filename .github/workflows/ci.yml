@@ -1,4 +1,4 @@
-name: CI Build and Test
+name: Build and Deploy .NET Application
 
 on:
   push:
@@ -13,19 +13,25 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v3
+      - name: Checkout Code
+        uses: actions/checkout@v3
 
-    - name: Setup .NET
-      uses: actions/setup-dotnet@v3
-      with:
-        dotnet-version: 8.0
+      - name: Setup .NET SDK
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: '8.0'
 
-    - name: Restore dependencies
-      run: dotnet restore
+      - name: Restore Dependencies
+        run: dotnet restore
 
-    - name: Build solution
-      run: dotnet build --no-restore
+      - name: Build
+        run: dotnet build --configuration Release
 
-    - name: Run tests
-      run: dotnet test --no-build --verbosity normal
+      - name: Run Tests
+        run: dotnet test --configuration Release
+
+      - name: Publish
+        run: dotnet publish --configuration Release --output ./publish
+
+      - name: Deploy to Azure (Optional)
+        # Add any deploy steps here (for example, to Azure)
