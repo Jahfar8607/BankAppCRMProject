@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "ocSQE4M59hbm2VuUaJxBB1zPyAFAxgYUIB0JT08flmQ=",
+  "Source": "BankApp.API",
+  "BasePath": "_content/BankApp.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
