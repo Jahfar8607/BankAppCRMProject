@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "tX64LCVRt8E=",
+  "dgSpecHash": "aCWDv0as8xg=",
   "success": true,
-  "projectFilePath": "D:\\Jahfar\\Dev\\GitHub_Sources\\BankApp\\BankApp\\BankApp\\BankApp.API\\BankApp.API.csproj",
+  "projectFilePath": "D:\\GitHub_Sources\\BankAppCRMProject\\BankApp\\BankApp.API\\BankApp.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jahfa\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\jahfa\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",
